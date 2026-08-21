@@ -4,7 +4,7 @@ Open-source stereoscopic camera for Meta Quest 3 and Quest 3S.
 
 ## Features
 
-- Dual-camera SBS photos and videos
+- Dual-camera SBS photos and videos（3D videos）
 - GPU preview, stereo composition, and hardware encoding
 - Automatic camera resolution detection
 - 25, 30, 50, and 60 FPS when supported
