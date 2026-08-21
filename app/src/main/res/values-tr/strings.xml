@@ -8,6 +8,7 @@
     <string name="action_photo">Fotoğraf</string>
     <string name="action_record">Kaydet</string>
     <string name="action_stop">Durdur</string>
+    <string name="setting_language">Dil</string>
     <string name="setting_resolution">Çözünürlük</string>
     <string name="setting_frame_rate">Kare hızı</string>
     <string name="setting_bitrate">Bit hızı: %1$d Mbps</string>

@@ -8,6 +8,7 @@
     <string name="action_photo">Фото</string>
     <string name="action_record">Запись</string>
     <string name="action_stop">Стоп</string>
+    <string name="setting_language">Язык</string>
     <string name="setting_resolution">Разрешение</string>
     <string name="setting_frame_rate">Частота кадров</string>
     <string name="setting_bitrate">Битрейт: %1$d Мбит/с</string>

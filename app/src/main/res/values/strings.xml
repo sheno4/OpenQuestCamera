@@ -9,6 +9,7 @@
     <string name="action_photo">Photo</string>
     <string name="action_record">Record</string>
     <string name="action_stop">Stop</string>
+    <string name="setting_language">Language</string>
     <string name="setting_resolution">Resolution</string>
     <string name="setting_frame_rate">Frame rate</string>
     <string name="setting_bitrate">Bitrate: %1$d Mbps</string>
@@ -95,4 +96,27 @@
     <string name="error_gl_program_link">GL program linking failed: %1$s</string>
     <string name="error_gl_shader_compile">GL shader compilation failed: %1$s</string>
     <string name="error_gl_operation">%1$s GL error 0x%2$s</string>
+
+    <string-array name="language_names" translatable="false">
+        <item>English</item>
+        <item>日本語</item>
+        <item>Deutsch</item>
+        <item>Français</item>
+        <item>Español</item>
+        <item>한국어</item>
+        <item>Italiano</item>
+        <item>Nederlands</item>
+        <item>Polski</item>
+        <item>Português (Brasil)</item>
+        <item>简体中文</item>
+        <item>繁體中文</item>
+        <item>Svenska</item>
+        <item>Norsk bokmål</item>
+        <item>Dansk</item>
+        <item>Čeština</item>
+        <item>Русский</item>
+        <item>Türkçe</item>
+        <item>ไทย</item>
+        <item>Bahasa Indonesia</item>
+    </string-array>
 </resources>

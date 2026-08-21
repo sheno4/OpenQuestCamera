@@ -15,6 +15,10 @@ public class CameraKeepAliveService extends Service {
     private static final String CH = "camera_recording";
     private PowerManager.WakeLock lock;
 
+    @Override protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(AppLocale.wrap(newBase));
+    }
+
     @Override public void onCreate() {
         super.onCreate();
         try {

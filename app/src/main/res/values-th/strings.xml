@@ -8,6 +8,7 @@
     <string name="action_photo">ถ่ายภาพ</string>
     <string name="action_record">บันทึก</string>
     <string name="action_stop">หยุด</string>
+    <string name="setting_language">ภาษา</string>
     <string name="setting_resolution">ความละเอียด</string>
     <string name="setting_frame_rate">อัตราเฟรม</string>
     <string name="setting_bitrate">บิตเรต: %1$d Mbps</string>

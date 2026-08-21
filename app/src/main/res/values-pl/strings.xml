@@ -8,6 +8,7 @@
     <string name="action_photo">Zdjęcie</string>
     <string name="action_record">Nagrywaj</string>
     <string name="action_stop">Zatrzymaj</string>
+    <string name="setting_language">Język</string>
     <string name="setting_resolution">Rozdzielczość</string>
     <string name="setting_frame_rate">Liczba klatek</string>
     <string name="setting_bitrate">Szybkość transmisji: %1$d Mbps</string>
