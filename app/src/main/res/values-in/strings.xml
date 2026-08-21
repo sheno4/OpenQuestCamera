@@ -8,6 +8,7 @@
     <string name="action_photo">Foto</string>
     <string name="action_record">Rekam</string>
     <string name="action_stop">Hentikan</string>
+    <string name="setting_language">Bahasa</string>
     <string name="setting_resolution">Resolusi</string>
     <string name="setting_frame_rate">Laju bingkai</string>
     <string name="setting_bitrate">Bitrate: %1$d Mbps</string>

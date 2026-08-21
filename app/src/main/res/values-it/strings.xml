@@ -8,6 +8,7 @@
     <string name="action_photo">Foto</string>
     <string name="action_record">Registra</string>
     <string name="action_stop">Arresta</string>
+    <string name="setting_language">Lingua</string>
     <string name="setting_resolution">Risoluzione</string>
     <string name="setting_frame_rate">Frequenza fotogrammi</string>
     <string name="setting_bitrate">Bitrate: %1$d Mbps</string>

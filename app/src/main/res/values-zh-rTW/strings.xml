@@ -8,6 +8,7 @@
     <string name="action_photo">拍照</string>
     <string name="action_record">錄影</string>
     <string name="action_stop">停止</string>
+    <string name="setting_language">語言</string>
     <string name="setting_resolution">解析度</string>
     <string name="setting_frame_rate">幀率</string>
     <string name="setting_bitrate">位元率：%1$d Mbps</string>

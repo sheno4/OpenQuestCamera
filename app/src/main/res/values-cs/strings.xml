@@ -8,6 +8,7 @@
     <string name="action_photo">Fotografie</string>
     <string name="action_record">Nahrávat</string>
     <string name="action_stop">Zastavit</string>
+    <string name="setting_language">Jazyk</string>
     <string name="setting_resolution">Rozlišení</string>
     <string name="setting_frame_rate">Snímková frekvence</string>
     <string name="setting_bitrate">Datový tok: %1$d Mb/s</string>

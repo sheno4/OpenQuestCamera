@@ -8,6 +8,7 @@
     <string name="action_photo">Foto</string>
     <string name="action_record">Optag</string>
     <string name="action_stop">Stop</string>
+    <string name="setting_language">Sprog</string>
     <string name="setting_resolution">Opløsning</string>
     <string name="setting_frame_rate">Billedfrekvens</string>
     <string name="setting_bitrate">Bithastighed: %1$d Mbps</string>

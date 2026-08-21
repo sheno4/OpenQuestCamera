@@ -8,6 +8,7 @@
     <string name="action_photo">Foto</string>
     <string name="action_record">Opnemen</string>
     <string name="action_stop">Stoppen</string>
+    <string name="setting_language">Taal</string>
     <string name="setting_resolution">Resolutie</string>
     <string name="setting_frame_rate">Framesnelheid</string>
     <string name="setting_bitrate">Bitsnelheid: %1$d Mbps</string>

@@ -8,6 +8,7 @@
     <string name="action_photo">Photo</string>
     <string name="action_record">Enregistrer</string>
     <string name="action_stop">Arrêter</string>
+    <string name="setting_language">Langue</string>
     <string name="setting_resolution">Résolution</string>
     <string name="setting_frame_rate">Fréquence d’image</string>
     <string name="setting_bitrate">Débit : %1$d Mbit/s</string>

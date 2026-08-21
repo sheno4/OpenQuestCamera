@@ -8,6 +8,7 @@
     <string name="action_photo">Foto</string>
     <string name="action_record">Gravar</string>
     <string name="action_stop">Parar</string>
+    <string name="setting_language">Idioma</string>
     <string name="setting_resolution">Resolução</string>
     <string name="setting_frame_rate">Taxa de quadros</string>
     <string name="setting_bitrate">Taxa de bits: %1$d Mbps</string>

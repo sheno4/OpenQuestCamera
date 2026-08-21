@@ -51,7 +51,6 @@ public class MainActivity extends Activity {
     private static final int REQ_CAMERA = 1001;
     private static final int REQ_AUDIO = 1002;
     private static final String HZOS_CAMERA_PERMISSION = "horizonos.permission.HEADSET_CAMERA";
-    private static final String PREFS = "openquestcamera_0_1";
 
     private SharedPreferences prefs;
     private SurfaceView previewSurfaceView;
@@ -61,6 +60,7 @@ public class MainActivity extends Activity {
     private TextView bitrateLabel;
     private TextView convergenceLabel;
     private TextView verticalLabel;
+    private Spinner languageSpinner;
     private Spinner resolutionSpinner;
     private Spinner fpsSpinner;
     private Spinner codecSpinner;
@@ -104,10 +104,14 @@ public class MainActivity extends Activity {
         @Override public void run() { restartCameraEngine(); }
     };
 
+    @Override protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(AppLocale.wrap(newBase));
+    }
+
     @Override protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-        prefs = getSharedPreferences(PREFS, MODE_PRIVATE);
+        prefs = getSharedPreferences(AppLocale.PREFS, MODE_PRIVATE);
         buildUi();
         setupLevelSensor();
         startHudLoop();
@@ -194,6 +198,12 @@ public class MainActivity extends Activity {
         settings.setPadding(dp(18), dp(8), dp(18), dp(12));
         root.addView(settings, new LinearLayout.LayoutParams(contentWidth, -2));
 
+        settings.addView(label(getString(R.string.setting_language), 14));
+        languageSpinner = new Spinner(this);
+        languageSpinner.setAdapter(adapter(getResources().getStringArray(R.array.language_names)));
+        languageSpinner.setSelection(AppLocale.languagePosition(AppLocale.selectedLanguageTag(this)));
+        settings.addView(languageSpinner, new LinearLayout.LayoutParams(-1, dp(52)));
+
         settings.addView(label(getString(R.string.setting_resolution), 14));
         resolutionSpinner = new Spinner(this);
         settings.addView(resolutionSpinner, new LinearLayout.LayoutParams(-1, dp(52)));
@@ -261,6 +271,16 @@ public class MainActivity extends Activity {
     }
 
     private void installListeners() {
+        languageSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if (position < 0 || position >= AppLocale.languageCount()) return;
+                String selected = AppLocale.languageTagAt(position);
+                if (!selected.equals(AppLocale.selectedLanguageTag(MainActivity.this))) {
+                    AppLocale.apply(MainActivity.this, selected);
+                }
+            }
+            @Override public void onNothingSelected(AdapterView<?> parent) {}
+        });
         bitrateSeek.setOnSeekBarChangeListener(new SimpleSeekListener() {
             @Override public void onProgressChanged(SeekBar bar, int p, boolean fromUser) { updateBitrateLabel(); updateHud(); }
             @Override public void onStopTrackingTouch(SeekBar bar) { prefs.edit().putInt("bitrate", selectedBitrateMbps()).apply(); }
@@ -758,6 +778,7 @@ public class MainActivity extends Activity {
     }
 
     private void setControlsEnabled(boolean enabled) {
+        languageSpinner.setEnabled(enabled);
         resolutionSpinner.setEnabled(enabled);
         fpsSpinner.setEnabled(enabled);
         bitrateSeek.setEnabled(enabled);

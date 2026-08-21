@@ -8,6 +8,7 @@
     <string name="action_photo">사진</string>
     <string name="action_record">녹화</string>
     <string name="action_stop">중지</string>
+    <string name="setting_language">언어</string>
     <string name="setting_resolution">해상도</string>
     <string name="setting_frame_rate">프레임 속도</string>
     <string name="setting_bitrate">비트레이트: %1$d Mbps</string>
