@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OpenQuestCamera</string>
+    <string name="notification_channel_camera">Camera</string>
+    <string name="notification_recording">Recording video</string>
+
+    <string name="status_initializing">Initializing…</string>
+    <string name="hud_placeholder">SBS --×-- · -- FPS · -- · -- Mbps\nStandby · Battery --% · Storage -- GB · Remaining -- · Actual -- FPS · Dropped 0 · Sync -- ms · Roll --°</string>
+    <string name="action_photo">Photo</string>
+    <string name="action_record">Record</string>
+    <string name="action_stop">Stop</string>
+    <string name="setting_resolution">Resolution</string>
+    <string name="setting_frame_rate">Frame rate</string>
+    <string name="setting_bitrate">Bitrate: %1$d Mbps</string>
+    <string name="setting_encoding">Codec</string>
+    <string name="setting_guides">Guides</string>
+    <string name="guide_off">Off</string>
+    <string name="guide_thirds">Rule of thirds</string>
+    <string name="guide_crosshair">Center crosshair</string>
+    <string name="option_microphone">Microphone</string>
+    <string name="option_save_originals">Save left/right originals</string>
+    <string name="option_preview">Preview</string>
+    <string name="option_dim_recording">Dim display while recording</string>
+    <string name="option_swap_eyes">Swap left/right</string>
+    <string name="setting_convergence">Convergence: %1$s px</string>
+    <string name="setting_vertical">Vertical: %1$s px</string>
+    <string name="action_reset">Reset</string>
+    <string name="status_detecting">Detecting…</string>
+    <string name="fps_value">%1$d FPS</string>
+    <string name="status_unavailable">Unavailable</string>
+    <string name="resolution_per_eye">%1$d×%2$d / eye</string>
+
+    <string name="status_camera_permission_required">Camera permission required</string>
+    <string name="status_camera_permission_missing">Camera permission missing</string>
+    <string name="status_microphone_permission_denied">Microphone permission denied</string>
+    <string name="status_finding_cameras">Finding cameras…</string>
+    <string name="status_no_stereo_mode">No usable stereo mode found</string>
+    <string name="error_initialization">Initialization failed: %1$s</string>
+    <string name="status_starting_camera">Starting camera…</string>
+    <string name="status_ready">Ready</string>
+    <string name="error_camera_start">Camera failed to start: %1$s</string>
+    <string name="error_no_available_mode">No usable mode</string>
+    <string name="error_mode_unavailable">The current resolution/codec is unavailable</string>
+    <string name="status_starting_recording">Starting recording…</string>
+    <string name="status_recording">● REC</string>
+    <string name="error_recording_start">Recording failed to start: %1$s</string>
+    <string name="status_saving">Saving…</string>
+    <string name="status_taking_photo">Taking photo…</string>
+    <string name="status_photo_saved">Photo saved</string>
+    <string name="error_photo_save">Failed to save photo: %1$s</string>
+
+    <string name="hud_microphone">MIC</string>
+    <string name="hud_muted">Muted</string>
+    <string name="hud_standby">Standby</string>
+    <string name="hud_remaining_time">%1$dh%2$02dm</string>
+    <string name="hud_spec">%1$s · %2$s · %3$s · %4$d Mbps · %5$s</string>
+    <string name="hud_runtime">%1$s · Battery %2$s%% · Storage %3$s GB · Remaining %4$s · Actual %5$s FPS · Dropped %6$d · Sync %7$s ms · Roll %8$s</string>
+    <string name="hud_display" translatable="false">%1$s\n%2$s</string>
+
+    <string name="error_photo_create">Unable to create photo</string>
+    <string name="error_photo_write">Unable to write photo</string>
+    <string name="error_jpeg_encode">JPEG encoding failed</string>
+    <string name="error_no_hardware_encoder">No compatible Surface hardware encoder</string>
+    <string name="status_stopped">Stopped</string>
+    <string name="error_microphone_initialization">Microphone initialization failed</string>
+    <string name="error_video_create">Unable to create video file</string>
+    <string name="error_video_open">Unable to open video file</string>
+    <string name="status_recording_aborted">Recording aborted</string>
+    <string name="error_no_video_frames">No video frames were available to save</string>
+    <string name="status_saved">Saved</string>
+
+    <string name="error_encoder_not_ready">Encoder is not ready</string>
+    <string name="error_camera_not_ready">Camera is not ready</string>
+    <string name="error_camera_stream_start">Failed to start camera stream: %1$s</string>
+    <string name="error_stereo_session_config">Failed to configure stereo camera session</string>
+    <string name="error_camera_session_create">Failed to create camera session: %1$s</string>
+    <string name="error_camera_disconnected">Camera disconnected</string>
+    <string name="error_camera_code">Camera error %1$d</string>
+
+    <string name="error_gpu_initialization_timeout">GPU initialization timed out</string>
+    <string name="error_gpu_initialization">GPU initialization failed: %1$s</string>
+    <string name="error_encoder_surface_timeout">Encoder Surface connection timed out</string>
+    <string name="error_encoder_surface">Encoder Surface connection failed: %1$s</string>
+    <string name="status_photo_processing">A photo is already being processed</string>
+    <string name="error_no_egl_display">No EGL display</string>
+    <string name="error_egl_initialization">EGL initialization failed</string>
+    <string name="error_no_egl_config">No EGL config</string>
+    <string name="error_egl_context">Failed to create EGL context</string>
+    <string name="error_photo_capture">Photo capture failed: %1$s</string>
+    <string name="error_gpu_pipeline">GPU pipeline error: %1$s</string>
+    <string name="error_egl_swap">EGL buffer swap failed</string>
+    <string name="error_photo_fbo">Failed to create photo FBO</string>
+    <string name="error_egl_window_surface">Failed to create EGL window surface</string>
+    <string name="error_egl_make_current">eglMakeCurrent failed</string>
+    <string name="error_gl_program_link">GL program linking failed: %1$s</string>
+    <string name="error_gl_shader_compile">GL shader compilation failed: %1$s</string>
+    <string name="error_gl_operation">%1$s GL error 0x%2$s</string>
+</resources>
